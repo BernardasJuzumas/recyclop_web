@@ -3,136 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recyclop - Coming Soon</title>
+    <title>Recyclop - Your Smart Recycling Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f7f0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #2ecc71;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            padding: 0;
-        }
-        .logo-placeholder {
-            width: 100px;
-            height: 100px;
-            background: #27ae60;
-            margin: 20px auto;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            color: white;
-        }
-        .features {
-            margin-top: 20px;
-        }
-        .feature {
-            background: white;
-            padding: 20px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        .cta {
-            background: #27ae60;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .store-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .store-button {
-            background: #333;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin: 0 10px;
-            border-radius: 5px;
-        }
-        .beta-signup {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .beta-signup input[type="email"] {
-            padding: 10px;
-            width: 60%;
-            margin-right: 10px;
-        }
-        .beta-signup button {
-            padding: 10px 20px;
-            background: #2ecc71;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+        .lucide { width: 24px; height: 24px; }
     </style>
 </head>
-<body>
-    <header>
-        <div class="logo-placeholder">R</div>
-        <h1>Recyclop</h1>
+<body class="min-h-screen bg-gradient-to-b from-green-100 to-green-200 p-4 font-sans">
+    <header class="mb-8">
+        <h1 class="text-3xl font-bold text-green-800">Recyclop</h1>
+        <p class="text-green-600">Your smart recycling companion</p>
     </header>
 
-    <div class="container">
-        <h2>Smart Recycling at Your Fingertips</h2>
-        <p>Recyclop is an innovative app that makes recycling easier and more efficient than ever before. Using advanced image recognition technology, we help you recycle correctly, no matter where you are.</p>
-
-        <div class="features">
-            <div class="feature">
-                <h3>Image Recognition</h3>
-                <p>Simply take a photo of your item, and Recyclop will identify it and provide recycling instructions.</p>
+    <main>
+        <section class="mb-8">
+            <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg p-6 shadow-lg">
+                <h2 class="text-2xl font-semibold text-green-700 mb-4">Recycle Smarter with AI</h2>
+                <p class="text-green-800 mb-4">
+                    Recyclop uses AI to help you identify and properly recycle items. Just snap a picture and get instant recycling instructions!
+                </p>
+                <button class="bg-green-500 text-white px-6 py-2 rounded-full flex items-center">
+                    Get Started <i data-lucide="chevron-right" class="ml-2"></i>
+                </button>
             </div>
-            <div class="feature">
-                <h3>Region-Specific Guidelines</h3>
-                <p>Get accurate recycling instructions based on your location, as recycling rules can vary by region.</p>
+        </section>
+
+        <section class="mb-8 overflow-x-auto">
+            <h2 class="text-xl font-semibold text-green-700 mb-4">App Features</h2>
+            <div class="flex space-x-4 pb-4">
+                <div class="flex-shrink-0 w-64 h-128 bg-green-200 rounded-lg shadow-md">
+                    <img src="images/camera.png" alt="Camera screenshot" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="flex-shrink-0 w-64 h-128 bg-green-200 rounded-lg shadow-md">
+                    <img src="images/analysis.png" alt="Analysis screenshot" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="flex-shrink-0 w-64 h-128 bg-green-200 rounded-lg shadow-md">
+                    <img src="images/history.png" alt="History screenshot" class="w-full h-full object-cover rounded-lg">
+                </div>
             </div>
-            <div class="feature">
-                <h3>Recycling History and Analytics</h3>
-                <p>Track your recycling habits and see the positive impact you're making on the environment.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-green-700 mb-4">Key Features</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg p-4 flex items-center">
+                    <i data-lucide="camera" class="text-green-600 mr-4"></i>
+                    <div>
+                        <h3 class="font-semibold text-green-700">AI-Powered Analysis</h3>
+                        <p class="text-sm text-green-600">Get instant recycling instructions for any item</p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg p-4 flex items-center">
+                    <i data-lucide="settings" class="text-green-600 mr-4"></i>
+                    <div>
+                        <h3 class="font-semibold text-green-700">Tailored results</h3>
+                        <p class="text-sm text-green-600">Get region relevant results in the language you understand</p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg p-4 flex items-center">
+                    <i data-lucide="history" class="text-green-600 mr-4"></i>
+                    <div>
+                        <h3 class="font-semibold text-green-700">Recycling History</h3>
+                        <p class="text-sm text-green-600">Keep track of your recycling efforts over time</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="cta">
-            <h2>Coming Soon to Your Device!</h2>
-            <p>Join the recycling revolution and make a difference in your community.</p>
-        </div>
+        <section>
+            <div class="bg-green-600 text-white rounded-lg p-6 text-center">
+                <h2 class="text-2xl font-semibold mb-4">Coming soon</h2>
+                <button class="bg-white text-green-600 px-6 py-2 rounded-full flex items-center mx-auto">
+                    <i data-lucide="chevron-right" class="mr-2"></i>
+                    Wishlist on Play Store
+                </button>
+            </div>
+        </section>
+    </main>
 
-        <div class="store-buttons">
-            <a href="#" class="store-button">App Store</a>
-            <a href="#" class="store-button">Google Play</a>
-        </div>
+    <footer class="mt-8 text-center text-green-700">
+        <p>&copy; 2024 Recyclop. All rights reserved.</p>
+    </footer>
 
-        <div class="beta-signup">
-            <h3>Be the First to Try Recyclop!</h3>
-            <p>Sign up for our beta program and get early access:</p>
-            <form>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Join Beta</button>
-            </form>
-        </div>
-    </div>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
